@@ -8,7 +8,7 @@ export const getCharacterCollection = async (): Promise<CharacterEntityApi> => {
   return data;
 };
 
-export const deleteHotel = async (id: string): Promise<boolean> => {
+export const deleteCharacter = async (id: string): Promise<boolean> => {
 
   return true;
 };
