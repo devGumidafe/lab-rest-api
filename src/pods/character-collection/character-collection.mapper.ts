@@ -9,5 +9,15 @@ export const mapFromApiToVm = (
   name: character.name,
   status: character.status,
   species: character.species,
-  gender: character.gender
+  gender: character.gender,
+  created: mapDateFromApiVm(character.created.toString())
 });
+
+export const mapDateFromApiVm = (date: string) => {
+  const dateToDateFormat = new Date(date);
+  const day = dateToDateFormat.getDate();
+  const year = dateToDateFormat.getFullYear();
+  const month = dateToDateFormat.toLocaleDateString('es-ES', { month: 'short' });
+
+  return `${day}-${month.toUpperCase()}-${year}`;
+}

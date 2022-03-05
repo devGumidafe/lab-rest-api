@@ -36,6 +36,9 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
           <Typography variant="subtitle1" gutterBottom>
             <strong>Species:</strong> {character.species}
           </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            <strong>Created:</strong> {character.created}
+          </Typography>
         </div>
       </CardContent>
       <CardActions>
