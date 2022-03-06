@@ -1,5 +1,5 @@
-import * as apiModel from './api/character-collection.api-model';
-import * as viewModel from './character-collection.vm';
+import * as apiModel from './api/character.api-model';
+import * as viewModel from './character.vm';
 
 export const mapFromApiToVm = (
   character: apiModel.CharacterEntityApi,
@@ -21,3 +21,15 @@ export const mapDateFromApiVm = (date: string) => {
 
   return `${day}-${month.toUpperCase()}-${year}`;
 }
+
+export const mapFromVmToApi = (character: viewModel.CharacterEntityVm): apiModel.CharacterEntityApi =>
+(({
+  ...character,
+  id: character.id.toString(),
+  image: character.picture,
+  name: character.name,
+  status: character.status,
+  species: character.species,
+  gender: character.gender,
+  created: character.created
+} as unknown) as apiModel.CharacterEntityApi);
