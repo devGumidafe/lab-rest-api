@@ -1,13 +1,3 @@
-export interface CharacterCollectionEntityApi {
-  info: {
-    count: number,
-    pages: number,
-    next: string,
-    prev?: null | string,
-  },
-  results: CharacterEntityApi[]
-}
-
 export interface CharacterEntityApi {
   id: number,
   name: string,
@@ -26,5 +16,6 @@ export interface CharacterEntityApi {
   image: string,
   episode: String[],
   url: string,
+  bestSentences: "",
   created: Date,
 }

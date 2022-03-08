@@ -16,5 +16,6 @@ export interface CharacterEntityApi {
   image: string,
   episode: String[],
   url: string,
+  bestSentences: string,
   created: Date,
 }

@@ -10,6 +10,7 @@ export const mapFromApiToVm = (
   status: character.status,
   species: character.species,
   gender: character.gender,
+  bestSentences: character.bestSentences,
   created: mapDateFromApiVm(character.created.toString())
 });
 

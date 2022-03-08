@@ -10,6 +10,7 @@ export const mapFromApiToVm = (
   status: character.status,
   species: character.species,
   gender: character.gender,
+  bestSentences: character.bestSentences,
   created: mapDateFromApiVm(character.created.toString())
 });
 
@@ -31,5 +32,6 @@ export const mapFromVmToApi = (character: viewModel.CharacterEntityVm): apiModel
   status: character.status,
   species: character.species,
   gender: character.gender,
+  bestSentences: character.bestSentences,
   created: character.created
 } as unknown) as apiModel.CharacterEntityApi);

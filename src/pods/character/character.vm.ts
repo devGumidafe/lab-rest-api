@@ -6,6 +6,7 @@ export interface CharacterEntityVm {
   type?: string,
   gender: string,
   picture: string,
+  bestSentences: string,
   created: string
 }
 
@@ -19,6 +20,7 @@ export const createEmptyCharacter = (): CharacterEntityVm => ({
   type: '',
   gender: '',
   picture: '',
+  bestSentences: '',
   created: new Date().toDateString()
 });
 
