@@ -1,6 +1,7 @@
-# LABORATORIO REST-API
+# EJERCICIO 1
 
-Laboratorio de Rest-API donde consumimos un servicio REST de la API de [rickandmorty](https://rickandmortyapi.com/).
+- Crear un proyecto en el que vamos a obtener una lista de actores de la API Rest de Rick & Morty, utilizando Axios o Fetch)
+- Navegando a la página de un character vamos a mostrar el detalle del mismo (segunda llamada a la API Rest).
 
 ## Comenzando 🚀
 
@@ -9,8 +10,3 @@ Laboratorio de Rest-API donde consumimos un servicio REST de la API de [rickandm
 ```
 npm install
 ```
-
-## Autor ✒️
-
-- **Gumidafe Socorro** - (https://github.com/devGumidafe)
-- **Web** - (https://www.gumidev.com)
