@@ -1,6 +1,6 @@
-# LABORATORIO REST-API
+# Opcional
 
-Laboratorio de Rest-API donde consumimos un servicio REST de la API de [rickandmorty](https://rickandmortyapi.com/).
+Implementar la misma aplicación (del ejercicio 1) pero tirando de la API de GraphQL
 
 ## Comenzando 🚀
 
@@ -9,8 +9,3 @@ Laboratorio de Rest-API donde consumimos un servicio REST de la API de [rickandm
 ```
 npm install
 ```
-
-## Autor ✒️
-
-- **Gumidafe Socorro** - (https://github.com/devGumidafe)
-- **Web** - (https://www.gumidev.com)
