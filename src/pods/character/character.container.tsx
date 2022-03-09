@@ -3,9 +3,9 @@ import { useParams, useHistory } from 'react-router-dom';
 import * as api from './api';
 import { createEmptyCharacter, CharacterEntityVm } from './character.vm';
 import { mapFromApiToVm } from './character.mappers';
-import { CharacterDetailComponent } from './characterDetail.component';
 import { Button } from '@material-ui/core';
 import { ArrowBack } from '@material-ui/icons';
+import { CharacterCard } from './components/character-card.component';
 
 export const CharacterContainer: React.FunctionComponent = (props) => {
   const [character, setCharacter] = React.useState<CharacterEntityVm>(
@@ -36,7 +36,7 @@ export const CharacterContainer: React.FunctionComponent = (props) => {
       >
         Back to home
       </Button>
-      <CharacterDetailComponent character={character} />
+      <CharacterCard character={character} />
     </>
   );
 };

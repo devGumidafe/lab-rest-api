@@ -3,11 +3,7 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton/IconButton';
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
 import { CharacterEntityVm } from '../character-collection.vm';
 import * as classes from './character-card.styles';
 
@@ -21,7 +17,7 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
   const { character, onEdit, onDelete } = props;
 
   return (
-    <Card onClick={() => onEdit(character.id)} style={{cursor:'pointer'}}>
+    <Card onClick={() => onEdit(character.id)} style={{ cursor: 'pointer' }}>
       <CardHeader title={character.name} />
       <CardContent>
         <div className={classes.content}>
@@ -41,14 +37,6 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
           </Typography>
         </div>
       </CardContent>
-      {/* <CardActions>
-        <IconButton onClick={() => onEdit(character.id)}>
-          <EditIcon />
-        </IconButton>
-        <IconButton onClick={() => onDelete(character.id)}>
-          <DeleteIcon />
-        </IconButton>
-      </CardActions> */}
     </Card>
   );
 };
