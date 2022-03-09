@@ -2,18 +2,16 @@
   "characters": [
     {
       "id": 1,
-      "picture": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
       "name": "Rick Sanchez",
       "status": "Alive",
       "species": "Human",
       "gender": "Male",
-      "bestSentences": "",
-      "created": "4-NOV-2017",
-      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+      "bestSentences": "Prueba frase",
+      "created": "4-NOV-2017"
     },
     {
       "id": 2,
-      "picture": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
       "name": "Morty Smith",
       "status": "Alive",
       "species": "Human",
