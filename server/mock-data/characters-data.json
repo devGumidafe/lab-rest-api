@@ -32,13 +32,13 @@
     },
     {
       "id": 4,
+      "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
       "name": "Beth Smith",
       "status": "Alive",
       "species": "Human",
       "gender": "Female",
-      "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
-      "bestSentences": "",
-      "created": "2017-11-04T19:22:43.665Z"
+      "bestSentences": "Test",
+      "created": "4-NOV-2017"
     },
     {
       "id": 5,
