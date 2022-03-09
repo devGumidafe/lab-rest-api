@@ -26,12 +26,6 @@ export const mapDateFromApiVm = (date: string) => {
 export const mapFromVmToApi = (character: viewModel.CharacterEntityVm): apiModel.CharacterEntityApi =>
 (({
   ...character,
-  id: character.id.toString(),
   image: character.picture,
-  name: character.name,
-  status: character.status,
-  species: character.species,
-  gender: character.gender,
   bestSentences: character.bestSentences,
-  created: character.created
 } as unknown) as apiModel.CharacterEntityApi);

@@ -21,7 +21,7 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
   const { character, onEdit, onDelete } = props;
 
   return (
-    <Card onClick={() => onEdit(character.id)} style={{cursor:'pointer'}}>
+    <Card onClick={() => onEdit(character.id)} style={{ cursor: 'pointer' }}>
       <CardHeader title={character.name} />
       <CardContent>
         <div className={classes.content}>
@@ -36,6 +36,13 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
           <Typography variant="subtitle1" gutterBottom>
             <strong>Species:</strong> {character.species}
           </Typography>
+
+          {character.bestSentences && (
+            <Typography variant="subtitle1" gutterBottom>
+              <strong>Best Sentences:</strong> {character.bestSentences}
+            </Typography>
+          )}
+
           <Typography variant="subtitle1" gutterBottom>
             <strong>Created:</strong> {character.created}
           </Typography>

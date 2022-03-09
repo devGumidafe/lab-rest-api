@@ -3,9 +3,8 @@ export interface CharacterEntityVm {
   name: string,
   status: string,
   species: string,
-  type?: string,
   gender: string,
   picture: string,
   bestSentences: string,
-  created: string
+  created: string,
 }

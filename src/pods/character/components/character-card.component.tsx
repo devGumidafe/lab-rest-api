@@ -6,17 +6,35 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { CharacterEntityVm } from '../character.vm';
 import * as classes from './character-card.styles';
+import { Button, CardActions, TextField } from '@material-ui/core';
 
 interface Props {
   character: CharacterEntityVm;
+  onSave: (character: CharacterEntityVm) => void;
 }
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
-  const { character } = props;
+  const { character, onSave } = props;
+  const [bestSentences, setBestSentences] = React.useState(
+    character.bestSentences
+  );
+
+  const onChangeBestSentences = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setBestSentences(event.target.value);
+  };
+
+  const onSaveCharacter = () => {
+    onSave({
+      ...character,
+      bestSentences,
+    });
+  };
 
   return (
-    <Card style={{width:'80%'}}>
-      <CardHeader title={character.name}/>
+    <Card style={{ width: '80%' }}>
+      <CardHeader title={character.name} />
       <CardContent>
         <div className={classes.content}>
           <CardMedia
@@ -33,8 +51,23 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
           <Typography variant="subtitle1" gutterBottom>
             <strong>Created:</strong> {character.created}
           </Typography>
+
+          <TextField
+            defaultValue={character.bestSentences}
+            onChange={onChangeBestSentences}
+            multiline
+            label="Best Sentences"
+            variant="outlined"
+            fullWidth
+            rows={2}
+          />
         </div>
       </CardContent>
+      <CardActions>
+        <Button variant="contained" color="primary" onClick={onSaveCharacter}>
+          Save
+        </Button>
+      </CardActions>
     </Card>
   );
 };

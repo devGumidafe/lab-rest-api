@@ -3,12 +3,12 @@ export interface CharacterEntityVm {
   name: string,
   status: string,
   species: string,
-  type?: string,
   gender: string,
   picture: string,
   bestSentences: string,
-  created: string
+  created: string,
 }
+
 
 const randomID = Math.random().toString(36).substring(2);
 
@@ -17,7 +17,6 @@ export const createEmptyCharacter = (): CharacterEntityVm => ({
   name: '',
   status: '',
   species: '',
-  type: '',
   gender: '',
   picture: '',
   bestSentences: '',
