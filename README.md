@@ -1,6 +1,15 @@
-# LABORATORIO REST-API
+# EJERCICIO 2
 
-Laboratorio de Rest-API donde consumimos un servicio REST de la API de [rickandmorty](https://rickandmortyapi.com/).
+- Montamos un json-server local
+- Añadimos una colección de characters (puedes coger la información del ejercicio anterior).
+- Además de los campos que ya teníamos, añadimos uno nuevo donde guardar las mejores frases de cada personaje
+
+- El campo se puede llamar bestSentences.
+
+1. Podéis inicializar este nuevo campo a vacío para cada personaje.
+2. Reemplazar los endpoints para que apunten al json-server.
+
+- El usuario puede editar y guardar el campos bestSentences.
 
 ## Comenzando 🚀
 
@@ -9,8 +18,3 @@ Laboratorio de Rest-API donde consumimos un servicio REST de la API de [rickandm
 ```
 npm install
 ```
-
-## Autor ✒️
-
-- **Gumidafe Socorro** - (https://github.com/devGumidafe)
-- **Web** - (https://www.gumidev.com)
