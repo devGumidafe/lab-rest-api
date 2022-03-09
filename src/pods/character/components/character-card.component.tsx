@@ -15,9 +15,11 @@ interface Props {
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
   const { character, onSave } = props;
-  const [bestSentences, setBestSentences] = React.useState(
-    character.bestSentences
-  );
+  const [bestSentences, setBestSentences] = React.useState('');
+
+  React.useEffect(() => {
+    setBestSentences(character.bestSentences);
+  }, [character.bestSentences]);
 
   const onChangeBestSentences = (
     event: React.ChangeEvent<HTMLInputElement>
@@ -53,13 +55,14 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
           </Typography>
 
           <TextField
-            defaultValue={character.bestSentences}
+            value={bestSentences}
             onChange={onChangeBestSentences}
             multiline
             label="Best Sentences"
-            variant="outlined"
+            variant="filled"
             fullWidth
             rows={2}
+            margin="normal"
           />
         </div>
       </CardContent>

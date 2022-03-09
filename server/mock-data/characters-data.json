@@ -7,28 +7,28 @@
       "status": "Alive",
       "species": "Human",
       "gender": "Male",
-      "bestSentences": "Prueba frase",
+      "bestSentences": "Rick sentence test",
       "created": "4-NOV-2017"
     },
     {
       "id": 2,
+      "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
       "name": "Morty Smith",
       "status": "Alive",
       "species": "Human",
       "gender": "Male",
-      "bestSentences": "",
-      "created": "4-NOV-2017",
-      "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+      "bestSentences": "Morty sentence test",
+      "created": "4-NOV-2017"
     },
     {
       "id": 3,
+      "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
       "name": "Summer Smith",
       "status": "Alive",
       "species": "Human",
       "gender": "Female",
-      "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
-      "bestSentences": "",
-      "created": "2017-11-04T19:09:56.428Z"
+      "bestSentences": "Smith sentence test",
+      "created": "4-NOV-2017"
     },
     {
       "id": 4,
@@ -52,12 +52,12 @@
     },
     {
       "id": 6,
+      "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
       "name": "Abadango Cluster Princess",
       "status": "Alive",
       "species": "Alien",
       "gender": "Female",
       "bestSentences": "",
-      "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
       "created": "4-NOV-2017"
     },
     {
